@@ -20,6 +20,7 @@ public class ChatRestResource {
 
     @MessageMapping("/chat")
     public void processMessage(@Payload ChatMessage chatMessage) {
+    	System.out.println("******** " + chatMessage.getContent());
 //        var chatId = chatRoomService
 //                .getChatId(chatMessage.getSenderId(), chatMessage.getRecipientId(), true);
 //        chatMessage.setChatId(chatId.get());

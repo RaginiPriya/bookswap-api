@@ -73,6 +73,8 @@ public class WebSecuritySpringConfig extends WebSecurityConfigurerAdapter {
                         .permitAll()
                     .antMatchers("/api/auth/**")
                         .permitAll()
+                    .antMatchers("/login/**")
+                        .permitAll()
                     .antMatchers("/ws/**")
                         .permitAll()
                     .antMatchers("/api/user/checkUsernameAvailability", "/api/user/checkEmailAvailability")
