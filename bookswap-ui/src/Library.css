@@ -1,0 +1,43 @@
+img {
+    max-width: 8rem;
+    max-height: 8rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.item {
+    width: 8rem;
+    height: 8rem;
+    height: auto;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+}
+
+/* fieldset {
+    border: 5px solid #000;
+    height: 150px;
+    text-align: center;
+  } */
+
+  hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+  }
+
+  a {
+    color: #f4623a;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #c34e2e;
+  }
+  
+  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
