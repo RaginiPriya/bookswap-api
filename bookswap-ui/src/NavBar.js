@@ -33,8 +33,8 @@ class Navbar extends React.Component {
                <ul id="nav">
                  {/* <li><a href="./Home">Home</a></li> */}
                 {/* <li><a href="./Login">Login</a></li> */}
-                <li><a href="/#books">Books</a></li>
-                 <li><a href="/#library">My Library</a></li>
+                <li><a href="/#/books">Books</a></li>
+                 <li><a href="/#/library">My Library</a></li>
                  <li><a href="/">Logout</a></li>
                </ul>
              </div>
