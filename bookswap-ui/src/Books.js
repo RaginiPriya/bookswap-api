@@ -10,6 +10,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { API_BASE_URL } from './constants'
 
 class Books extends Component {
 
@@ -28,7 +29,8 @@ class Books extends Component {
     connect = () => {
         const Stomp = require("stompjs");
         var SockJS = require("sockjs-client");
-        SockJS = new SockJS("http://localhost:8080/ws");
+        var url = API_BASE_URL + '/ws';
+        SockJS = new SockJS(url);
         this.stompClient = Stomp.over(SockJS);
         this.stompClient.connect({}, this.onConnected, this.onError);
     };
